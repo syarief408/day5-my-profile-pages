@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/myProject.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>My Project</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li><img class="" src="./asset/logo-dumbways.png" alt="" /></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="myProject.html">My Project</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <div class="project-form">
+      <h1>Add New Project</h1>
+
+      <form class="project-input" id="input-project">
+        <div class="input">
+          <label for="name-project" class="label-project">Project Name</label>
+          <input type="text" id="name-project" class="name-project" required />
+        </div>
+        <div class="input-date">
+          <div class="input">
+            <label for="start-date" class="label-start-date">Start Date</label>
+            <input type="date" id="start-date" class="start-date" required />
+          </div>
+          <div class="input">
+            <label for="end-date" class="label-end-date">End Date</label>
+            <input type="date" id="end-date" class="end-date" required />
+          </div>
+        </div>
+        <div class="input">
+          <label for="description-project" class="label-description"
+            >Project Description</label
+          >
+          <textarea
+            id="description-project"
+            class="description"
+            cols="50"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <div class="input-grid">
+          <label class="label-technologies">Technologies</label>
+          <div class="input-checkbox">
+            <label for="node-js" class="icon-technologies">
+              <input type="checkbox" id="node-js" class="nodejs-icon" />
+              Node JS
+            </label>
+            <label for="next-js" class="icon-technologies">
+              <input type="checkbox" id="next-js" class="nextjs-icon" />
+              Vue JS
+            </label>
+            <label for="react-js" class="icon-technologies">
+              <input type="checkbox" id="react-js" class="reactjs-icon" />
+              React JS
+            </label>
+            <label for="javascript" class="icon-technologies">
+              <input type="checkbox" id="javascript" class="javascript-icon" />
+              Javascript
+            </label>
+          </div>
+        </div>
+        <div class="input">
+          <label for="upload-image" class="label-upload">Upload Image</label>
+          <input type="file" id="upload-image" class="upload-image" required />
+        </div>
+
+        <button type="submit" class="btnSubmit">Submit</button>
+      </form>
+    </div>
+
+    <div id="container-project" class="project container">
+      <h1>My Project</h1>
+      <div class="project-list" id="list-project"></div>
+    </div>
+    <script src="/script/myProject.js"></script>
+    <script src="/script/storage.js"></script>
+  </body>
+</html>

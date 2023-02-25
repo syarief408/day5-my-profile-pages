@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  background: #e3e7eb;
+}
+
+/* CONTACT SECTION */
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #e3e7eb;
+  margin: 5% auto;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+}
+
+h2 {
+  font-weight: bold;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  gap: 20px;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  align-self: flex-end;
+}
+
+.button-submit {
+  padding: 8px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  transform: scale(1.1);
+}

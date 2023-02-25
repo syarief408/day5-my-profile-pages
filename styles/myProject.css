@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: solid red px;
+}
+
+body {
+  background-color: #e3e7eb;
+  font-family: "Poppins", sans-serif;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: column;
+  background: #e3e7eb;
+  width: 50%;
+  margin: 70px auto 5px;
+  border-radius: 5px;
+  padding: 50px;
+  align-items: center;
+}
+
+.project-input {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 20px;
+}
+
+.input,
+.input-grid {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.label-project,
+.label-start-date,
+.label-end-date,
+.label-description,
+.label-technologies,
+.label-upload {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.label-project {
+  margin-top: 40px;
+}
+
+.label-start-date,
+.label-end-date,
+.label-description,
+.label-technologies,
+.label-upload {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.name-project,
+.start-date,
+.end-date,
+.description {
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.8);
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.upload-image input[type="file"] {
+  padding: 0;
+  cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+  background: #fff;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.upload-image {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+  background: #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.8);
+}
+.input-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+textarea {
+  resize: none;
+}
+
+.input-checkbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 100px;
+}
+
+.icon-technologies {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nodejs-icon,
+.reactjs-icon {
+  margin-left: 0;
+}
+.nextjs-icon,
+.javascript-icon {
+  margin-left: 40px;
+}
+
+.input input[type="file"] {
+  padding: 0;
+  cursor: pointer;
+}
+
+.btnSubmit {
+  align-self: flex-end;
+  padding: 8px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+
+  background-color: black;
+  color: white;
+
+  cursor: pointer;
+}
+.btnSubmit:hover {
+  transform: scale(1.1);
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 3rem 5rem;
+  margin-top: 10px;
+
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.75);
+
+  align-items: center;
+  gap: 30px;
+}
+
+.project .project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.project-list .project-item {
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.project-item img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.project-item .project-name,
+.project-item .project-description,
+.project-item .action-btn {
+  padding: 0 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.project-name h3 {
+  color: #000;
+}
+
+.project-item .project-description {
+  text-align: justify;
+}
+
+.project-description p {
+  max-height: 98px;
+  overflow: hidden;
+}
+
+i {
+  font-size: 2em;
+}
+
+.project-item .project-tech-info {
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-description .project-tech-info img {
+  width: 32px;
+}
+
+.project-item .action-btn {
+  margin-bottom: 20px;
+  flex-direction: row;
+  align-self: center;
+}
+
+.edit-list {
+  align-self: flex-end;
+  width: 100px;
+  margin-top: 10px;
+  font-size: 16px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.edit-list:hover {
+  transform: scale(1.1);
+}
+
+.delete-list {
+  align-self: flex-end;
+  width: 100px;
+  margin-top: 10px;
+  font-size: 16px;
+  height: 30px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.delete-list:hover {
+  transform: scale(1.1);
+}
