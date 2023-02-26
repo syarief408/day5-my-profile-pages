@@ -1,3 +1,5 @@
+/*
+
 const resultData = [];
 const RENDER_RESULT = "add-new-project";
 
@@ -11,7 +13,7 @@ const inputNextJS = document.getElementById("next-js");
 const inputReactJS = document.getElementById("react-js");
 const inputJavascript = document.getElementById("javascript");
 const inputUploadImage = document.getElementById("upload-image");
-
+*/
 const generateID = () => {
   return +new Date();
 };
