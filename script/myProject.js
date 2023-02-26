@@ -1,5 +1,3 @@
-/*
-
 const resultData = [];
 const RENDER_RESULT = "add-new-project";
 
@@ -13,7 +11,7 @@ const inputNextJS = document.getElementById("next-js");
 const inputReactJS = document.getElementById("react-js");
 const inputJavascript = document.getElementById("javascript");
 const inputUploadImage = document.getElementById("upload-image");
-*/
+
 const generateID = () => {
   return +new Date();
 };
@@ -45,7 +43,7 @@ const addProject = () => {
   resultData.push(project);
   document.dispatchEvent(new Event(RENDER_RESULT));
 };
-
+/*
 const createProjectItem = (resultData) => {
   const {
     projectName,
@@ -58,7 +56,7 @@ const createProjectItem = (resultData) => {
     checkJavascript,
     uploadImage,
   } = resultData;
-
+*/
   const projectSection = document.createElement("section");
   projectSection.classList.add("project-item");
   projectSection.innerHTML = `
